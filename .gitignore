@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Cypress Take screenshots and record files
+cypress/screenshots/
+cypress/videos/
