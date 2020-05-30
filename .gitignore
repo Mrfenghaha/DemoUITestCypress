@@ -104,7 +104,9 @@ dist
 .tern-port
 
 # Cypress Take screenshots and record files
+cypress/screenshots
 cypress/screenshots/*
+cypress/videos
 cypress/videos/*
 
 node_modules/*

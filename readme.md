@@ -5,7 +5,7 @@
 
 # 框架详细介绍
 
-![](https://github.com/fengyibo963/DemoUITest/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
+![](https://github.com/fengyibo963/DemoUITestCypress/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
 
 ## 用例分层概念介绍
 该框架分层使用PO设计模式，BDD理念
@@ -32,7 +32,7 @@ TestCase拼接为简单关键字驱动模式，使用动作的函数名或类型
 
 ## 项目结构详细介绍
 
-![](https://github.com/fengyibo963/DemoUITest/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
+![](https://github.com/fengyibo963/DemoUITestCypress/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
 ```
 |-- cypress
 |    -- common    # 通用函数
@@ -54,9 +54,9 @@ TestCase拼接为简单关键字驱动模式，使用动作的函数名或类型
 |    -- support    # 支持文件（可以理解为hooks钩子）
 |        -- index.js    #  cypress会默认自动包含支持文件 index.js
 |    -- videos    # 执行录像
-|-- cypress.json  # cypress配置文件、环境变量
 |-- docs  # 文档存放
 |-- node_modules  # 安装的cypress包
+|-- cypress.json  # cypress配置文件、环境变量
 |-- package.json  # 项目信息，用于CI打包
 |-- package-clok.json  # cypress版本信息
 ```
