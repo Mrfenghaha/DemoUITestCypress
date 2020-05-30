@@ -5,7 +5,7 @@
 
 # 框架详细介绍
 
-![](https://github.com/fengyibo963/DemoUITestCypress/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
+![](https://github.com/fengyibo963/DemoUITestCypress/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
 
 ## 用例分层概念介绍
 该框架分层使用PO设计模式，BDD理念
