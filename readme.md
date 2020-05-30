@@ -3,22 +3,26 @@
 
 由于考虑不同项目的情况，为保持灵活性，本框架对于用例编写部分并未进行更多的封装，使用本框架仍需要一些Js编码基础
 
+Cypress提供[官网文档](https://docs.cypress.io/zh-cn/guides/overview/why-cypress.html#)、API[拓展文档](https://example.cypress.io/)查看使用
+
 # 框架详细介绍
 
 ![](https://github.com/fengyibo963/DemoUITestCypress/blob/master/docs/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
 
 ## 用例分层概念介绍
-该框架分层使用PO设计模式，BDD理念
+该框架分层使用PO设计模式
 * Element（元素）：封装用到的cypress操作元素的方法
 * Page（页面）：封装页面为类，并且封装所有操作
 * Suite（套件）：封装动作(行为)（例如下拉框选择需要三步"点击下拉框、选择选项、点击确认"，为了更好的复用可以将三步合为一个行为直接调用）
 * TestCase（用例）：使用动作(行为)拼接工作流，并且对于所有动作可以进行断言
 
+
+## 关键字驱动
 由于某些操作自身就可以定义为动作，因为TestCase既可以使用Suite拼接，也可以使用Page进行拼接（或混合拼接）。
 
 如果为了更好的理解分层，同时增强TestCase脚本的可读性，可以封装所有动作仅使用Suite拼接TestCase（单同时代码量、维护成本会相应的增高）
 
-TestCase拼接为简单关键字驱动模式，使用动作的函数名或类型作为关键字，并且Python语言自身按照顺序执行的机制，达到直接拼接的效果
+TestCase拼接为简单关键字驱动模式，使用动作的函数名或类型作为关键字，并且JS语言自身按照顺序执行的机制，达到直接拼接的效果
 
 ## 简单数据驱动介绍
 对于所有输入参数均进行高度参数化，将需要的所有参数进行参数化，这样使得操作代码的复用性、维护性提高
@@ -63,21 +67,23 @@ TestCase拼接为简单关键字驱动模式，使用动作的函数名或类型
 
 
 # 环境/使用介绍
-Cypress提供[官网文档](https://docs.cypress.io/zh-cn/guides/overview/why-cypress.html#)、API[拓展文档](https://example.cypress.io/)查看使用
 
 ## 操作系统
 * Mac OS 10.9+ (Mavericks+), 仅提供64位二进制文件
 * Linux Ubuntu 12.04+, Fedora 21, Debian 8的64位二进制文件
 * Windows 7+
+
 ## 安装NodeJs环境
 由于Cypress是基于js语言的工具，操作系统需要安装NodeJs环境。
 Mac[安装参考](https://blog.csdn.net/yst19910702/article/details/89714544)、Linux[安装参考](https://blog.csdn.net/baidu_36943075/article/details/90666681)、Windows[安装参考](https://blog.csdn.net/cai454692590/article/details/86093297)
+
 ## 安装Cypress
 cypress需要安装至你的项目文件夹下，因此每个新的项目需要安装一次（或复制旧包）
 ```
 cd xxx/xxxx/xxx   # 手动创建你的项文件夹并进入该文件夹
 npm install cypress --save-dev  # 安装cypress
 ```
+
 ## 启动Cypress
 * 直接启动
 	```
@@ -97,6 +103,7 @@ npm install cypress --save-dev  # 安装cypress
 	cd xxx/xxxx/xxx   # 进入项目根目录
 	npm run cypress:open  # 启动cypress
 	```
+
 ## 命令行执行测试
 * 配置执行命令，package.json文件添加执行命令
 	```
