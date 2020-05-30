@@ -106,3 +106,7 @@ dist
 # Cypress Take screenshots and record files
 cypress/screenshots/
 cypress/videos/
+
+node_modules/*
+.DS_Store
+*/.DS_Store
