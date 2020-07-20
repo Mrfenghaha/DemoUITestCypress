@@ -3,9 +3,6 @@
     "cypress:open": "cypress open",
     "cy:run": "cypress run"
   },
-  "dependencies": {
-    "lodash": "^4.17.19"
-  },
   "devDependencies": {
     "cypress": "^4.10.0"
   }
