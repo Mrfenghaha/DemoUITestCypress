@@ -81,6 +81,7 @@ Mac[安装参考](https://blog.csdn.net/yst19910702/article/details/89714544)、
 cypress需要安装至你的项目文件夹下，因此每个新的项目需要安装一次（或复制旧包）
 ```
 cd xxx/xxxx/xxx   # 手动创建你的项文件夹并进入该文件夹
+npm init
 npm install cypress --save-dev  # 安装cypress
 ```
 
